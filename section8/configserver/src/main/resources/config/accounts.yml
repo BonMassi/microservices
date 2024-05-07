@@ -1,0 +1,11 @@
+
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to BonBank accounts related local APIs"
+  contactDetails:
+    name: "Bon Tirado-Developer"
+    email: "bon@tirado.com"
+  onCallSupport:
+    -669 44 55 726

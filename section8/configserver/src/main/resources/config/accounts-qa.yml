@@ -1,0 +1,10 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to BonBank accounts related QA APIs"
+  contactDetails:
+    name: "Massiel Tirado-QA Lead"
+    email: "massiel@tirado.com"
+  onCallSupport:
+    -722 44 55 726

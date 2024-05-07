@@ -1,0 +1,10 @@
+build:
+  version: "1.0"
+
+accounts:
+  message: "Welcome to BonBank accounts related prod APIs"
+  contactDetails:
+    name: "Morales Tirado-Product Owner"
+    email: "morales@tirado.com"
+  onCallSupport:
+    -694 44 55 726

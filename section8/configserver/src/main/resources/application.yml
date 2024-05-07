@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    # active: native #this is only for local purpose
+    active: git
+  cloud:
+    config:
+      server:
+        #native: #this is only for local purpose
+          #search-locations: "classpath:/config" #this is only for local purpose
+        git:
+          uri: "https://github.com/BonMassi/configuration-microservices.git"
+          default-label: main
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+
+encrypt:
+  key: "RYvpoPn5aYNErOpy"
+
+server:
+  port: 8071
